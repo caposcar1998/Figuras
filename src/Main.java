@@ -5,7 +5,7 @@ public class Main {
 	public static void main(String args[]) {
 		Scanner sc= new Scanner(System.in);
 		System.out.println("Selecciona la forma: 1)Cuadrado, 2) Tri√°ngulo Equilatero 3)Tri√°ngulo Is√≥sceles+"
-				+ "4 tri·ngulo escaleno");
+				+ "4 tri·ngulo escaleno"+"5) Rectangulo"+ "6)Pentagono"+ "7) Circulo");
 		int seleccionFigura= sc.nextInt();
 		Shape s=null;
 		sc.nextLine();
@@ -35,6 +35,16 @@ public class Main {
 				System.out.println("Valor hipotenusa");
 				shortSide=sc.nextDouble();
 				s=new Scalene(color, longSide, mediumSide, shortSide);
+				
+			case 5:
+				
+			case 6:
+				
+			case 7:
+				
+				System.out.println("Valor del radio de tu circulo");
+				double radio=sc.nextDouble();
+				s=new Circle(color, radio);
 				
 			
 		}
