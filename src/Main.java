@@ -26,6 +26,7 @@ public class Main {
 				System.out.println("Dame el lado pequeÃ±o:");
 				double shortSide= sc.nextDouble();
 				s= new Isosceles(color, longSide,shortSide);
+				break;
 				
 			case 4:
 				System.out.println("Valor lado pequeño");
@@ -35,17 +36,25 @@ public class Main {
 				System.out.println("Valor hipotenusa");
 				shortSide=sc.nextDouble();
 				s=new Scalene(color, longSide, mediumSide, shortSide);
+				break;
 				
 			case 5:
+				System.out.println("Valor lado grande");
+				longSide=sc.nextDouble();
+				System.out.println("Valor  lado pequeño");
+				shortSide=sc.nextDouble();
+				s=new Rectangle(color, longSide, shortSide);
+				break;
 				
 			case 6:
+				break;
 				
 			case 7:
 				
 				System.out.println("Valor del radio de tu circulo");
 				double radio=sc.nextDouble();
 				s=new Circle(color, radio);
-				
+				break;
 			
 		}
 		
