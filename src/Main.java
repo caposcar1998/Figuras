@@ -5,7 +5,7 @@ public class Main {
 	public static void main(String args[]) {
 		Scanner sc= new Scanner(System.in);
 		System.out.println("Selecciona la forma: 1)Cuadrado, 2) Tri√°ngulo Equilatero 3)Tri√°ngulo Is√≥sceles+"
-				+ "4 tri·ngulo escaleno"+"5) Rectangulo"+ "6)Pentagono"+ "7) Circulo");
+				+ "4) Tri·ngulo escaleno "+"5) Rectangulo"+ "6) Pentagono "+ "7) Circulo ");
 		int seleccionFigura= sc.nextInt();
 		Shape s=null;
 		sc.nextLine();
@@ -47,6 +47,9 @@ public class Main {
 				break;
 				
 			case 6:
+				System.out.println("Valor lado ");
+				longSide=sc.nextDouble();
+				s=new Pentagon(color,longSide);
 				break;
 				
 			case 7:
