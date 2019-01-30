@@ -28,7 +28,7 @@ public class Pentagon extends Shape {
 	
 	public double calculateArea() {
 		double angle=(360/side);
-		apotem=(side/Math.tan(angle/2));
+		apotem=(side/2*Math.tan(angle/2));
 		double area=(calculatePerimeter()*apotem)/2;
 		return area;
 	}
